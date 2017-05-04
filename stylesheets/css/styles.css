@@ -12,6 +12,13 @@ a {
     outline: 0 none;
     text-decoration: none; }
 
+p {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-family: "Montserrat", sans-serif;
@@ -143,5 +150,93 @@ h6 {
       margin: 0 !important; }
   .banner .typed-words {
     color: #07cb79; }
+
+.about {
+  padding-top: 152px; }
+  .about .heading {
+    margin-bottom: 91px;
+    position: relative; }
+    .about .heading:before {
+      content: "";
+      background: #07cb79 none repeat scroll 0 0;
+      height: 15px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: -24px;
+      transform: rotate(45deg);
+      width: 15px; }
+    .about .heading:after {
+      bottom: -23px;
+      content: "";
+      background: #07cb79 none repeat scroll 0 0;
+      height: 15px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      transform: rotate(45deg);
+      width: 15px; }
+    .about .heading h2 {
+      position: relative; }
+      .about .heading h2:before {
+        content: "";
+        background: #07cb79 none repeat scroll 0 0;
+        height: 3px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: -18px;
+        width: 70px; }
+      .about .heading h2:after {
+        bottom: -17px;
+        content: "";
+        background: #07cb79 none repeat scroll 0 0;
+        height: 3px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 70px; }
+  .about .about-details {
+    margin-bottom: 40px; }
+    .about .about-details-heading {
+      color: #222;
+      font-family: Raleway, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      line-height: 33px;
+      margin-bottom: 20px; }
+  .about .about-box-section {
+    margin-bottom: 125px;
+    margin-top: 100px; }
+    .about .about-box-section .about-box {
+      margin-bottom: 40px;
+      overflow: hidden; }
+      .about .about-box-section .about-box-icon {
+        color: #333;
+        float: left;
+        font-size: 60px;
+        position: absolute;
+        width: 18%; }
+        .about .about-box-section .about-box-icon > i {
+          color: #07cb79;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 35.5%; }
+      .about .about-box-section .about-box-content {
+        position: relative;
+        width: 82%;
+        float: right;
+        font-family: "Montserrat", sans-serif;
+        transition: all 0.5s ease 0s; }
 
 /*# sourceMappingURL=styles.css.map */
