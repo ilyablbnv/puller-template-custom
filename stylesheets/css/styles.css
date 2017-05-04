@@ -1,0 +1,60 @@
+body {
+  color: #797979;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 27px; }
+
+.header {
+  background: #ffffff none repeat scroll 0 0;
+  padding: 10px 0;
+  transition: 0.3s; }
+
+.logo {
+  margin-top: 15px; }
+
+.navbar {
+  border: medium none;
+  margin-bottom: 0; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+  text-decoration: none; }
+
+.main-menu ul {
+  float: inherit !important;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0; }
+  .main-menu ul li {
+    display: inline; }
+    .main-menu ul li:first-child a {
+      margin: 0; }
+    .main-menu ul li a {
+      color: #393939;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      line-height: 64px;
+      margin-left: 30px;
+      padding: 0;
+      text-transform: uppercase; }
+      .main-menu ul li a.active {
+        color: #07cb79; }
+      .main-menu ul li a:hover {
+        color: #07cb79; }
+
+.banner {
+  background: transparent url("../../img/banner.png") repeat scroll center;
+  padding: 194px 0 200px;
+  position: relative; }
+  .banner:before {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */
