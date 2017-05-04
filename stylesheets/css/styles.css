@@ -5,6 +5,58 @@ body {
   letter-spacing: 1px;
   line-height: 27px; }
 
+a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none; }
+  a:active, a:hover, a:focus {
+    outline: 0 none;
+    text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 32px;
+  letter-spacing: 0.8px;
+  line-height: 39px;
+  font-weight: 700; }
+
+h3 {
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.7px; }
+
+h4 {
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.6px; }
+
+h5 {
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.5px; }
+
+h6 {
+  color: #222222;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 27px;
+  text-transform: capitalize; }
+
+.display-table {
+  display: table;
+  height: 100%;
+  width: 100%; }
+
+.display-table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
 .header {
   background: #ffffff none repeat scroll 0 0;
   padding: 10px 0;
@@ -45,7 +97,7 @@ body {
         color: #07cb79; }
 
 .banner {
-  background: transparent url("../../img/banner.png") repeat scroll center;
+  background: transparent url("../../img/banner.png") repeat scroll center center/cover;
   padding: 194px 0 200px;
   position: relative; }
   .banner:before {
@@ -56,5 +108,40 @@ body {
     position: absolute;
     top: 0;
     width: 100%; }
+  .banner .banner-text a {
+    color: #292929;
+    display: table-cell;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle; }
+  .banner .banner-text > h1 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .banner .banner-text > p {
+    color: #f8f8f8;
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 22px; }
+  .banner .banner-text .banner-btn {
+    background: #07cb79 none repeat scroll 0 0;
+    border-radius: 5px;
+    display: inline-table;
+    height: 45px;
+    margin-bottom: 30px;
+    transition: all 0.4s ease 0s;
+    width: 170px; }
+    .banner .banner-text .banner-btn a {
+      color: #fff !important;
+      margin: 0 !important; }
+  .banner .typed-words {
+    color: #07cb79; }
 
 /*# sourceMappingURL=styles.css.map */
