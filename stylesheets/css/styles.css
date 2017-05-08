@@ -64,6 +64,58 @@ h6 {
   display: table-cell;
   vertical-align: middle; }
 
+.heading {
+  margin-bottom: 91px;
+  position: relative; }
+  .heading:before {
+    content: "";
+    background: #07cb79 none repeat scroll 0 0;
+    height: 15px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -24px;
+    transform: rotate(45deg);
+    width: 15px; }
+  .heading:after {
+    bottom: -23px;
+    content: "";
+    background: #07cb79 none repeat scroll 0 0;
+    height: 15px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 15px; }
+  .heading h2 {
+    position: relative; }
+    .heading h2:before {
+      content: "";
+      background: #07cb79 none repeat scroll 0 0;
+      height: 3px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: -18px;
+      width: 70px; }
+    .heading h2:after {
+      bottom: -17px;
+      content: "";
+      background: #07cb79 none repeat scroll 0 0;
+      height: 3px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      width: 70px; }
+
 .header {
   background: #ffffff none repeat scroll 0 0;
   padding: 10px 0;
@@ -153,57 +205,6 @@ h6 {
 
 .about {
   padding-top: 152px; }
-  .about .heading {
-    margin-bottom: 91px;
-    position: relative; }
-    .about .heading:before {
-      content: "";
-      background: #07cb79 none repeat scroll 0 0;
-      height: 15px;
-      left: 0;
-      margin: 0 auto;
-      position: absolute;
-      right: 0;
-      text-align: center;
-      top: -24px;
-      transform: rotate(45deg);
-      width: 15px; }
-    .about .heading:after {
-      bottom: -23px;
-      content: "";
-      background: #07cb79 none repeat scroll 0 0;
-      height: 15px;
-      left: 0;
-      margin: 0 auto;
-      position: absolute;
-      right: 0;
-      text-align: center;
-      transform: rotate(45deg);
-      width: 15px; }
-    .about .heading h2 {
-      position: relative; }
-      .about .heading h2:before {
-        content: "";
-        background: #07cb79 none repeat scroll 0 0;
-        height: 3px;
-        left: 0;
-        margin: 0 auto;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        top: -18px;
-        width: 70px; }
-      .about .heading h2:after {
-        bottom: -17px;
-        content: "";
-        background: #07cb79 none repeat scroll 0 0;
-        height: 3px;
-        left: 0;
-        margin: 0 auto;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        width: 70px; }
   .about .about-details {
     margin-bottom: 40px; }
     .about .about-details-heading {
@@ -238,5 +239,38 @@ h6 {
         float: right;
         font-family: "Montserrat", sans-serif;
         transition: all 0.5s ease 0s; }
+
+.services {
+  padding: 152px 0 125px;
+  background: #07cb79 none repeat scroll 0 0; }
+  .services .heading:before, .services .heading:after {
+    background: #222 none repeat scroll 0 0; }
+  .services .heading h2:before, .services .heading h2:after {
+    background: #222 none repeat scroll 0 0; }
+  .services .service-row {
+    margin-bottom: 43px; }
+  .services .service-card {
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding: 50px 20px;
+    text-align: center; }
+    .services .service-card-icon i {
+      background: #222 none repeat scroll 0 0;
+      border-radius: 100%;
+      color: #fff;
+      font-size: 20px;
+      height: 60px;
+      line-height: 60px;
+      margin-bottom: 15px;
+      text-align: center;
+      width: 60px;
+      transition: .3s; }
+      .services .service-card-icon i:hover {
+        background: none;
+        color: #07cb79;
+        font-size: 40px; }
+    .services .service-card-text h6 {
+      margin-bottom: 5px; }
+    .services .service-card-text p {
+      color: #222; }
 
 /*# sourceMappingURL=styles.css.map */

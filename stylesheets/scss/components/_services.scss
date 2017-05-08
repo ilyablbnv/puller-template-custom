@@ -1,0 +1,55 @@
+.services {
+  padding: 152px 0 125px;
+  background: $green none repeat scroll 0 0;
+
+  .heading {
+    &:before, &:after {
+      background: #222 none repeat scroll 0 0;
+    }
+    h2 {
+      &:before, &:after {
+        background: #222 none repeat scroll 0 0;
+      }
+    }
+  }
+
+  .service-row {
+    margin-bottom: 43px;
+  }
+
+  .service-card {
+    background: #f3f3f3 none repeat scroll 0 0;
+    padding: 50px 20px;
+    text-align: center;
+
+    &-icon {
+      i {
+        background: #222 none repeat scroll 0 0;
+        border-radius: 100%;
+        color: #fff;
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 60px;
+        transition: .3s;
+
+        &:hover {
+          background: none;
+          color: $green;
+          font-size: 40px;
+        }
+      }
+    }
+
+    &-text {
+      h6 {
+        margin-bottom: 5px;
+      }
+      p {
+        color: #222;
+      }
+    }
+  }
+}
