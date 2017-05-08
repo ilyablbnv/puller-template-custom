@@ -1,0 +1,64 @@
+.banner {
+  background: rgba(0, 0, 0, 0) url("../../img/banner.png") repeat scroll center (center / cover);
+  padding: 194px 0 200px;
+  position: relative;
+
+  &:before {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .banner-text {
+    a {
+      color: #292929;
+      display: table-cell;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      line-height: 20px;
+      margin-bottom: 30px;
+      padding: 0 20px;
+      position: relative;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+
+    > h1 {
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    > p {
+      color: #f8f8f8;
+      font-size: 16px;
+      line-height: 29px;
+      margin-bottom: 22px;
+    }
+
+    .banner-btn {
+      background: $green none repeat scroll 0 0;
+      border-radius: 5px;
+      display: inline-table;
+      height: 45px;
+      margin-bottom: 30px;
+      transition: all 0.4s ease 0s;
+      width: 170px;
+
+      a {
+        color: #fff !important;
+        margin: 0 !important;
+      }
+    }
+  }
+
+  .typed-words {
+    color: $green;
+  }
+}
