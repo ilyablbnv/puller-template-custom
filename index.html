@@ -161,7 +161,8 @@
                 <div class="heading text-center">
                     <h2>We offer the service</h2>
                 </div>
-            </div></div>
+            </div>
+        </div>
         <div class="row service-row">
             <div class="col-sm-4">
                 <div class="service-card">
@@ -235,10 +236,136 @@
     </div>
 </div>
 
+<div class="works">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading text-center">
+                    <h2>Our Works</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portfolio-nav">
+                    <ul>
+                        <li data-filter="*">All</li>
+                        <li data-filter=".branding">Website</li>
+                        <li data-filter=".marketing">Photography</li>
+                        <li data-filter=".animation">Video</li>
+                        <li data-filter=".development">Development</li>
+                        <li data-filter=".consultancy">Consultancy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="portfolio-items portfolio-masonry">
+                    <div class="single-portfolio marketing bradning">
+                        <div class="portfolio-thumb">
+                            <a href="#">
+                                <img src="img/portfolio/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h4>
+                                <a href="#">Web development</a>
+                            </h4>
+                            <small class="portfolio-category">Branding</small >
+                        </div>
+                    </div>
+                    <div class="single-portfolio marketing development">
+                        <div class="portfolio-thumb">
+                            <a href="#">
+                                <img src="img/portfolio/8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h4>
+                                <a href="#">Photography</a>
+                            </h4>
+                            <small class="portfolio-category">Gallery</small >
+                        </div>
+                    </div>
+                    <div class="single-portfolio animation consultancy">
+                        <div class="portfolio-thumb">
+                            <a href="#">
+                                <img src="img/portfolio/5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h4>
+                                <a href="#">Video commercial</a>
+                            </h4>
+                            <small class="portfolio-category">Video</small >
+                        </div>
+                    </div>
+                    <div class="single-portfolio branding">
+                        <div class="portfolio-thumb">
+                            <a href="#">
+                                <img src="img/portfolio/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h4>
+                                <a href="#">App development</a>
+                            </h4>
+                            <small class="portfolio-category">Mobile</small >
+                        </div>
+                    </div>
+                    <div class="single-portfolio marketing consultancy">
+                        <div class="portfolio-thumb">
+                            <a href="#">
+                                <img src="img/portfolio/4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h4>
+                                <a href="#">Web development</a>
+                            </h4>
+                            <small class="portfolio-category">Branding</small >
+                        </div>
+                    </div>
+                    <div class="single-portfolio branding">
+                        <div class="portfolio-thumb">
+                            <a href="#">
+                                <img src="img/portfolio/6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h4>
+                                <a href="#">Seo marketing</a>
+                            </h4>
+                            <small class="portfolio-category">Seo</small >
+                        </div>
+                    </div>
+                    <div class="single-portfolio animation development">
+                        <div class="portfolio-thumb">
+                            <a href="#">
+                                <img src="img/portfolio/7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio-desc">
+                            <h4>
+                                <a href="#">UI/UX Design</a>
+                            </h4>
+                            <small class="portfolio-category">Design</small >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 <script>
     $(function(){
@@ -246,6 +373,36 @@
             strings: ["Web Development", "Photography", "App Development", "SEO Marketing", "UI / UX Design", "Video Commercial"],
             typeSpeed: 0,
             loop: true
+        });
+
+        $(window).on('load',function() {
+            $('.portfolio-items').isotope({
+            });
+        });
+        $(window).on('load',function() {
+            $('.portfolio-masonry').isotope({
+                itemSelector: '.portfolio-single',
+                layoutMode: 'masonry',
+                resizesContainer: false
+            });
+        });
+        $(window).on('load',function() {
+            $('.portfolio-nav li').on('click', function(){
+
+                $(".portfolio-nav li").removeClass("active");
+                $(this).addClass("active");
+
+                var selector = $(this).attr('data-filter');
+                $(".portfolio-items").isotope({
+                    filter: selector,
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear',
+                        queue: false
+                    }
+                });
+                return false;
+            });
         });
     });
 </script>

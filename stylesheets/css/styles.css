@@ -273,4 +273,83 @@ h6 {
     .services .service-card-text p {
       color: #222; }
 
+.works {
+  padding: 152px 0 125px; }
+  .works .portfolio-nav {
+    margin-bottom: 30px;
+    text-align: center; }
+    .works .portfolio-nav ul {
+      list-style: outside none none;
+      margin: 0;
+      padding: 0; }
+      .works .portfolio-nav ul li {
+        background: #222 none repeat scroll 0 0;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Montserrat",sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        line-height: 39px;
+        padding: 0 25px;
+        position: relative;
+        text-transform: uppercase; }
+        .works .portfolio-nav ul li.active {
+          background: #07cb79; }
+          .works .portfolio-nav ul li.active:after {
+            background: #07cb79 none repeat scroll 0 0;
+            bottom: -7px;
+            content: "";
+            height: 15px;
+            left: 50%;
+            margin-left: -8px;
+            position: absolute;
+            transform: rotate(45deg);
+            width: 15px; }
+  .works .single-portfolio {
+    float: left;
+    position: relative;
+    width: 33.34%; }
+    .works .single-portfolio:hover .portfolio-thumb a::before {
+      transform: scaleX(1); }
+    .works .single-portfolio:hover .portfolio-desc {
+      transform: scale(1); }
+    .works .single-portfolio .portfolio-thumb a {
+      display: block;
+      position: relative; }
+      .works .single-portfolio .portfolio-thumb a:before {
+        background: #07cb79 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(0);
+        transition: all 0.6s ease 0s;
+        width: 100%; }
+      .works .single-portfolio .portfolio-thumb a img {
+        width: 100%; }
+    .works .single-portfolio .portfolio-desc {
+      left: 20%;
+      position: absolute;
+      right: 10%;
+      top: 30px;
+      transform: scale(0);
+      transition: all 0.8s ease 0s;
+      z-index: 9; }
+      .works .single-portfolio .portfolio-desc h4 a {
+        color: #fff;
+        display: inline-block;
+        font-size: 20px;
+        margin-bottom: 7px;
+        text-transform: capitalize; }
+      .works .single-portfolio .portfolio-desc .portfolio-category {
+        color: #fff;
+        display: block;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        margin-bottom: 10px; }
+
 /*# sourceMappingURL=styles.css.map */
