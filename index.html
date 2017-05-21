@@ -8,9 +8,12 @@
     <title>Puller template</title>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="libs/owl-carousel2/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel2/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700" rel="stylesheet">
+
     <link rel="stylesheet" href="stylesheets/css/styles.css">
 
 </head>
@@ -361,20 +364,112 @@
     </div>
 </div>
 
+<div class="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading text-center">
+                    <h2>Our clients loves us!</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="testimonial-carousel owl-carousel owl-theme">
+                <div class="testimonial-carousel">
+                    <div class="col-sm-12">
+                        <div class="testimonial-sin testimonial-sin-2">
+                            <div class="testimonial-content">
+                                <i class="icofont icofont-quote-left"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerpitation ullamco laboris aliquip.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-img">
+                                    <img src="img/clients/1.jpg" alt="" />
+                                </div>
+                                <div class="author-name">
+                                    <h6>Rony doe</h6>
+                                    <p>Costumer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="testimonial-sin">
+                            <div class="testimonial-author">
+                                <div class="author-img">
+                                    <img src="img/clients/2.jpg" alt="" />
+                                </div>
+                                <div class="author-name">
+                                    <h6>Alena Doel</h6>
+                                    <p>Costumer</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <i class="icofont icofont-quote-left"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerpitation ullamco laboris aliquip.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="testimonial-sin testimonial-sin-2">
+                            <div class="testimonial-content">
+                                <i class="icofont icofont-quote-left"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerpitation ullamco laboris aliquip.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-img">
+                                    <img src="img/clients/1.jpg" alt="" />
+                                </div>
+                                <div class="author-name">
+                                    <h6>Rony doe</h6>
+                                    <p>Costumer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="testimonial-sin">
+                            <div class="testimonial-author">
+                                <div class="author-img">
+                                    <img src="img/clients/2.jpg" alt="" />
+                                </div>
+                                <div class="author-name">
+                                    <h6>Alena Doel</h6>
+                                    <p>Costumer</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <i class="icofont icofont-quote-left"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerpitation ullamco laboris aliquip.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+<script src="libs/owl-carousel2/js/owl.carousel.min.js"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 <script>
     $(function(){
+        // Typed words
         $(".typed-words").typed({
             strings: ["Web Development", "Photography", "App Development", "SEO Marketing", "UI / UX Design", "Video Commercial"],
             typeSpeed: 0,
             loop: true
         });
 
+        // Masonry portfolio
         $(window).on('load',function() {
             $('.portfolio-items').isotope({
             });
@@ -403,6 +498,19 @@
                 });
                 return false;
             });
+        });
+
+        // Testimonial carousel
+        $(".testimonial-carousel").owlCarousel({
+//            autoPlay: false,
+//            slideSpeed:2000,
+//            pagination:true,
+//            navigation:true,
+            items : 2,
+//            itemsDesktop : [1199,2],
+//            itemsDesktopSmall : [980,2],
+//            itemsTablet: [768,1],
+//            itemsMobile : [479,1]
         });
     });
 </script>
