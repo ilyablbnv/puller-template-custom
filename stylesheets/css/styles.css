@@ -653,4 +653,29 @@ h6 {
   .contact .brand-area {
     padding: 50px 0; }
 
+footer {
+  background: #222 none repeat scroll 0 0;
+  padding: 20px 0; }
+  footer .footer-social-icons > a {
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    width: 40px; }
+    footer .footer-social-icons > a:hover {
+      color: #fff; }
+  footer .footer-text > p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 30px; }
+  footer .footer-text a {
+    color: #ddd;
+    font-weight: 700;
+    letter-spacing: 1px; }
+
 /*# sourceMappingURL=styles.css.map */
