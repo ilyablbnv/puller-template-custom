@@ -437,4 +437,76 @@ h6 {
       opacity: 1;
       padding: 0; }
 
+.pricing {
+  padding: 152px 0 125px; }
+  .pricing .pricing-sin {
+    background: #f5f5f5 none repeat scroll 0 0;
+    overflow: hidden; }
+  .pricing .pricing-quality {
+    margin: 23px 0 25px; }
+    .pricing .pricing-quality h5 {
+      color: #07cb79;
+      font-weight: bold; }
+    .pricing .pricing-quality > p {
+      color: #999999;
+      font-size: 14px;
+      letter-spacing: .4px; }
+  .pricing .pricing-prize {
+    background: #fff none repeat scroll 0 0;
+    margin: 0 auto;
+    padding: 29px 0 22px;
+    width: 80%; }
+    .pricing .pricing-prize > h2 {
+      color: #222;
+      line-height: 27px; }
+    .pricing .pricing-prize > p {
+      color: #999;
+      font-family: "Montserrat",sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      text-transform: uppercase; }
+  .pricing .pricing-list {
+    margin: 18px 0 13px;
+    text-align: center; }
+    .pricing .pricing-list > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .pricing .pricing-list ul li {
+      border-bottom: 1px solid #ddd;
+      line-height: 40px; }
+      .pricing .pricing-list ul li:first-child {
+        border-top: 1px solid #ddd; }
+  .pricing .pricing-btn, .pricing .banner-text-btn {
+    border-radius: 5px;
+    display: inline-table;
+    height: 45px;
+    margin-bottom: 30px;
+    transition: all 0.4s ease 0s;
+    width: 170px; }
+  .pricing .pricing-btn > a, .pricing .banner-text a {
+    color: #292929;
+    display: table-cell;
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle; }
+  .pricing .pricing-sin:hover .pricing-quality h5 {
+    color: #292929; }
+  .pricing .pricing-sin:hover .pricing-btn {
+    background: #07cb79 none repeat scroll 0 0; }
+  .pricing .pricing-sin:hover .pricing-btn a {
+    color: #fff; }
+  .pricing .pricing-sin .pricing-btn {
+    background: #222 none repeat scroll 0 0; }
+    .pricing .pricing-sin .pricing-btn a {
+      color: #fff; }
+
 /*# sourceMappingURL=styles.css.map */
