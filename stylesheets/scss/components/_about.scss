@@ -48,4 +48,86 @@
       }
     }
   }
+
+  .skill {
+    .skill-progress {
+      color: #222;
+      font-size: 16px;
+      font-weight: 600;
+      overflow: hidden;
+      position: relative;
+
+      .progress {
+          background: transparent none repeat scroll 0 0;
+          border: 1px solid #f3f3f3;
+          border-radius: 0;
+          box-shadow: none;
+          height: 15px;
+          margin-top: 5px;
+
+        .progress-bar {
+          background-color: $green;
+          border-radius: 0;
+          box-shadow: none;
+          color: #fff;
+          float: left;
+          font-family: "Montserrat", serif;
+          font-size: 11px;
+          font-weight: 300;
+          height: 100%;
+          letter-spacing: 1px;
+          line-height: 18px;
+          padding-right: 15px;
+          text-align: right;
+
+          &.webdesign{
+            width: 80%;
+          }
+          &.logoskill{
+            width: 70%;
+          }
+          &.photography{
+            width:85%;
+          }
+          &.grpcdesign{
+            width: 65%;
+          }
+          &.webdev{
+            width: 90%;
+          }
+        }
+      }
+
+      .web-bar {
+        background: #f5f5f5 none repeat scroll 0 0;
+        border-radius: 100%;
+        color: #222;
+        font-family: "Montserrat",sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        min-height: 30px;
+        min-width: 30px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+
+        &.bar1 {
+          right: 16%;
+        }
+        &.bar2 {
+          right: 26%;
+        }
+        &.bar3 {
+          right: 11%;
+        }
+        &.bar4 {
+          right: 31%;
+        }
+        &.bar5 {
+          right: 7%;
+        }
+      }
+    }
+  }
 }
