@@ -4,7 +4,12 @@
   position: relative;
 
   .contact-box-single .about-box-icon i {
+    color: $green;
     font-size: 24px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 35.5%;
   }
 
   .contact-box {
@@ -14,9 +19,26 @@
 
   .contact-box-single {
     margin-bottom: 28px;
+    overflow: hidden;
     .about-box-content > p {
       color: #fff;
     }
+  }
+
+  .about-box-icon {
+    color: #333;
+    float: left;
+    font-size: 60px;
+    position: absolute;
+    width: 18%;
+  }
+
+  .about-box-content {
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    width: 82%;
   }
 
   .about-box-mrgn-none {
@@ -73,6 +95,9 @@
     }
     input:focus, textarea:focus {
       font-size: 16px;
+      border-color: $green !important;
+      box-shadow: none !important;
+      outline: medium none !important;
     }
   }
 
@@ -109,6 +134,19 @@
 
   .footer-social-icons {
     padding-top: 16px;
+    
+    a {
+      background: $green none repeat scroll 0 0;
+      border-radius: 3px;
+      color: #fff;
+      display: inline-block;
+      font-size: 20px;
+      height: 40px;
+      line-height: 40px;
+      margin-right: 10px;
+      text-align: center;
+      width: 40px;
+    }
   }
 
   .brand-area {
