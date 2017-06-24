@@ -1,8 +1,6 @@
 //Variables
 @import "variables";
 
-//Responsive
-@import "responsive";
 
 // Import all components
 @import "components/styles";
@@ -17,3 +15,6 @@
 @import "components/blog";
 @import "components/contact";
 @import "components/footer";
+
+//Responsive
+@import "responsive";

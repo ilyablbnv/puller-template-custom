@@ -42,17 +42,17 @@
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
-                            <div class="navbar-collapse collapse">
+                            <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Works</a></li>
-                                    <li><a href="#">Testimonial</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Team</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#works">Works</a></li>
+                                    <li><a href="#testimonial">Testimonial</a></li>
+                                    <li><a href="#pricing">Pricing</a></li>
+                                    <li><a href="#team">Team</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -88,7 +88,7 @@
     </div>
 </div>
 
-<div class="about">
+<div id="about" class="about">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -187,7 +187,7 @@
     </div>
 </div>
 
-<div class="services">
+<div id="services" class="services">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -269,7 +269,7 @@
     </div>
 </div>
 
-<div class="works">
+<div id="works" class="works">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -394,7 +394,7 @@
     </div>
 </div>
 
-<div class="testimonial">
+<div id="testimonial" class="testimonial">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -480,7 +480,7 @@
     </div>
 </div>
 
-<div class="pricing">
+<div id="pricing" class="pricing">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
@@ -566,7 +566,7 @@
     </div>
 </div>
 
-<div class="team">
+<div id="team" class="team">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
@@ -604,7 +604,7 @@
                         <div class="team-member-hover">
                             <div class="team-member-details text-center">
                                 <h6>Adam Sandlar</h6>
-                                <p>creative derector</p>
+                                <p>creative director</p>
                             </div>
                             <div class="team-member-link">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -658,7 +658,7 @@
     </div>
 </div>
 
-<div class="blog">
+<div id="blog" class="blog">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -707,7 +707,7 @@
     </div>
 </div>
 
-<div class="contact">
+<div id="contact" class="contact">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -815,6 +815,17 @@
 
 <script>
     $(function(){
+
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                $(this).collapse('hide');
+            }
+        });
+        $('body').scrollspy({
+            target: '.navbar-collapse',
+            offset: 195
+        });
+
         var s = $("#sticker");
         var pos = s.position();
         $(window).on('scroll', function() {
